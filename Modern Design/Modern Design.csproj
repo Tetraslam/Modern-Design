@@ -63,6 +63,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Core\ObservableObject.cs" />
+    <Compile Include="Core\RelayCommand.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -95,10 +97,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Core\" />
     <Folder Include="Fonts\" />
     <Folder Include="Images\" />
-    <Folder Include="NewFolder1\" />
+    <Folder Include="MVVM\Model\" />
+    <Folder Include="MVVM\ViewModel\" />
+    <Folder Include="MVVM\View\" />
+    <Folder Include="Theme\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
