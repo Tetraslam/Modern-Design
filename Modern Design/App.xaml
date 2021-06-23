@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:Modern_Design"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="C:\Users\conta\source\repos\Modern Design\Modern Design\Theme\MenuButtonTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

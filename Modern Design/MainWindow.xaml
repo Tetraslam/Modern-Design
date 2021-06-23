@@ -25,6 +25,21 @@
                 <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
+
+            <TextBlock Text="Tetraslam"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Foreground="AntiqueWhite"
+                       FontSize="22"
+                       Margin="20, 0, 0, 0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Home"
+                             Height="50"
+                             Foreground="AntiqueWhite"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+            </StackPanel>
         </Grid>
     </Border>
 </Window>
