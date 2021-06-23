@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modern Design", "Modern Design\Modern Design.csproj", "{E41C1E2E-AA26-4965-9D72-29FE054C0FCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E41C1E2E-AA26-4965-9D72-29FE054C0FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41C1E2E-AA26-4965-9D72-29FE054C0FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41C1E2E-AA26-4965-9D72-29FE054C0FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41C1E2E-AA26-4965-9D72-29FE054C0FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E0CDB4D-09A9-4CA6-9D85-F049228A63B4}
+	EndGlobalSection
+EndGlobal
