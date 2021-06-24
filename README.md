@@ -2,7 +2,7 @@
 ![Modern-design](https://i.imgur.com/Pqrf7Vf.png)
 ### What is this repo?
 
-I've always wanted to learn how to make desktop applications. Well, I'm finally learning how to make on in C#!
+I've always wanted to learn how to make desktop applications. Well, I'm finally learning how to make them using C#, .NET and WPF!
 
 At the end, this'll be an application which will keep you updated about all my latest projects right from the application.
 
