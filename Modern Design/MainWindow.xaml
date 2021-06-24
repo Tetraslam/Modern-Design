@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Modern_Design"
+        xmlns:ViewModel="clr-namespace:Modern_Design.MVVM.ViewModel"
+        xmlns:view="clr-namespace:Modern_Design.MVVM.View"
         mc:Ignorable="d"
         Height="600" Width="920"
         WindowStyle="None"
@@ -11,8 +13,16 @@
         Background="Transparent"
         AllowsTransparency="True"
         
-        
+        Title="Tetraslam"
         >
+
+
+
+    <Window.DataContext>
+
+        <ViewModel:MainViewModel/>
+    </Window.DataContext>
+
     <Border Background="#272537"
         CornerRadius="50">
         <Grid>
@@ -25,21 +35,81 @@
                 <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-
+            <Button Content="X" 
+                    FontSize="1"
+                    
+                    Background="Transparent"
+                HorizontalAlignment="Right" 
+                Margin="0,156.8,10,0" 
+                VerticalAlignment="Top" 
+                Width="180" 
+                Height="32"
+                    BorderBrush="#272537"
+                    BorderThickness="0"
+                Click="Button_Click" RenderTransformOrigin="0.5,0.5" Grid.Row="1"
+                    />
             <TextBlock Text="Tetraslam"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Left"
                        Foreground="AntiqueWhite"
                        FontSize="22"
-                       Margin="20, 0, 0, 0"/>
+                       Margin="20, 0, 0, 0"
+                       FontFamily="/Fonts/#Poppins"/>
 
             <StackPanel Grid.Row="1">
-                <RadioButton Content="Home"
-                             Height="50"
-                             Foreground="AntiqueWhite"
-                             FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                <RadioButton
+                    
+                    Content="Home"
+                    FontSize="14"
+                    Height="50"
+                    Foreground="AntiqueWhite"
+                    Style="{StaticResource MenuButtonTheme}"
+                    IsChecked="True"
+                    Command="{Binding HomeViewCommand}"
+                    
+                    FontFamily="/Fonts/#Poppins"/>
+                <RadioButton
+                    Content="My Projects"
+                    FontSize="14"
+                    Height="50"
+                    Foreground="AntiqueWhite"
+                    Style="{StaticResource MenuButtonTheme}"
+                    Command="{Binding MyProjectsViewCommand}"
+                    FontFamily="/Fonts/#Poppins"/>
+                <RadioButton
+                    Content="Blog"
+                    FontSize="14"
+                    Height="50"
+                    Foreground="AntiqueWhite"
+                    Style="{StaticResource MenuButtonTheme}"
+                    FontFamily="/Fonts/#Poppins"/>
+                <RadioButton
+                    BorderThickness="0"
+                    BorderBrush="#272537"
+                    Focusable="False"
+                    IsHitTestVisible="False"
+                    Content="Exit Application"
+                    FontSize="14"
+                    Height="50"
+                    Foreground="AntiqueWhite"
+                    Style="{StaticResource MenuButtonTheme}"
+                    Command="{Binding MyProjectsViewCommand}"
+                    FontFamily="/Fonts/#Poppins"/>
             </StackPanel>
+            <TextBox Width="250"
+                       Height="40"
+                       VerticalContentAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="5"
+                       Grid.Column="1"
+                     Style="{StaticResource ModernTextbox}"
+                     />
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"
+                            Content="{Binding CurrentView}"/>
         </Grid>
     </Border>
+
 </Window>
+    

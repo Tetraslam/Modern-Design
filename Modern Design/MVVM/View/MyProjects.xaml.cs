@@ -13,24 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Modern_Design
+namespace Modern_Design.MVVM.View
 {
-
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MyProjects.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MyProjects : UserControl
     {
-        public MainWindow()
+        public MyProjects()
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
     }
-    
 }
